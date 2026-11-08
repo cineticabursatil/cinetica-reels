@@ -398,5 +398,31 @@
    "inicio": 46.5,
    "texto": "Algo grande viene. Sígueme."
   }
+ ],
+ "Reel_Cinetica_Explicada_v3_1080x1920.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿Tu señal llega cuando el precio ya subió?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "En física, si duplicas la velocidad, la energía se multiplica por cuatro."
+  },
+  {
+   "inicio": 6.9,
+   "texto": "En bolsa pasa lo mismo: cada movimiento tiene peso, impulso y una trayectoria."
+  },
+  {
+   "inicio": 11.4,
+   "texto": "Lo tradicional son las medias móviles. Pero una media es un promedio del pasado; por eso la señal llega tarde."
+  },
+  {
+   "inicio": 18.9,
+   "texto": "La cinética mide la energía de cada tramo. Ves cuándo pierde energía, mientras ocurre."
+  },
+  {
+   "inicio": 26.4,
+   "texto": "No adivina: mide. Sígueme y aprende a leer la cinética del precio."
+  }
  ]
 }
