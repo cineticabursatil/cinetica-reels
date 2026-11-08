@@ -1,7 +1,7 @@
 {
  "02_Teaser_nuevo.mp4": [
   {
-   "inicio": 0.2,
+   "inicio": 0.0,
    "texto": "¿Y si tu gráfico te dijera más?"
   },
   {
@@ -309,7 +309,7 @@
  ],
  "14_20-11_Esquema_Bollinger.mp4": [
   {
-   "inicio": 0.2,
+   "inicio": 0.0,
    "texto": "¿Sabías que leer el precio es más fácil de lo que crees?"
   },
   {
@@ -367,7 +367,7 @@
  ],
  "15_CALL_PUT_a_la_vez.mp4": [
   {
-   "inicio": 0.3,
+   "inicio": 0.0,
    "texto": "Call y put, a la vez."
   },
   {
