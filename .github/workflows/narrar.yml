@@ -1,0 +1,24 @@
+name: Narrar reels con voz
+on:
+  workflow_dispatch:
+    inputs:
+      voz: {description: "Voz edge-tts", default: "es-MX-JorgeNeural"}
+      solo: {description: "Prefijo de reel (vacío = todos)", default: ""}
+  push:
+    paths: ["narraciones.json"]
+permissions: {contents: write}
+jobs:
+  narrar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg && pip install edge-tts
+      - run: |
+          cd final
+          python ../narrar_reels.py --voz "${{ inputs.voz || 'es-MX-JorgeNeural' }}" ${{ inputs.solo && format('--solo {0}', inputs.solo) || '' }}
+          rm -rf ../final_voz && mv final_voz ../final_voz
+      - run: |
+          git config user.name "cinetica-bot"; git config user.email "bot@users.noreply.github.com"
+          git add final_voz && git commit -m "Reels narrados" && git push || echo "sin cambios"

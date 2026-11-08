@@ -1,0 +1,402 @@
+{
+ "02_Teaser_nuevo.mp4": [
+  {
+   "inicio": 0.2,
+   "texto": "¿Y si tu gráfico te dijera más?"
+  },
+  {
+   "inicio": 3,
+   "texto": "Así se lee un movimiento con energía."
+  },
+  {
+   "inicio": 7,
+   "texto": "Uno: el contexto. ¿Dónde está el precio?"
+  },
+  {
+   "inicio": 11,
+   "texto": "Dos: la apertura. ¿Quién empuja?"
+  },
+  {
+   "inicio": 14,
+   "texto": "Mis códigos, en acción."
+  },
+  {
+   "inicio": 18,
+   "texto": "Varias temporalidades, una sola lectura."
+  },
+  {
+   "inicio": 22,
+   "texto": "Tres: la energía. ¿Acelera, o se frena?"
+  },
+  {
+   "inicio": 25,
+   "texto": "Cuatro: el contrato. ¿Call?"
+  },
+  {
+   "inicio": 29,
+   "texto": "¿O put?"
+  },
+  {
+   "inicio": 33,
+   "texto": "Cinco: la calma, antes del movimiento."
+  },
+  {
+   "inicio": 36,
+   "texto": "Acción. Contrato. Plan."
+  },
+  {
+   "inicio": 40,
+   "texto": "Algo extraordinario está en camino. Sígueme."
+  }
+ ],
+ "03_09-11_La_colina.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿Vendiste, y después explotó?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "En física, subir una bola cuesta energía, y esa energía se guarda."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "Al soltarla, esa energía se convierte en movimiento."
+  },
+  {
+   "inicio": 14.2,
+   "texto": "En bolsa, un rango estrecho es energía guardada."
+  },
+  {
+   "inicio": 20.2,
+   "texto": "Pero ojo: la carga no te dice la dirección."
+  },
+  {
+   "inicio": 23.7,
+   "texto": "La ruptura la libera, y el movimiento lo confirma."
+  },
+  {
+   "inicio": 27.2,
+   "texto": "Primero se carga, luego se mueve. Sígueme para la parte 3."
+  }
+ ],
+ "04_10-11_El_retrovisor.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "Tu media móvil te avisa tarde."
+  },
+  {
+   "inicio": 2.3,
+   "texto": "Las medias móviles miran hacia atrás: te muestran dónde estuvo el precio."
+  },
+  {
+   "inicio": 9.2,
+   "texto": "Y cuando llega la curva, el retrovisor te avisa tarde."
+  },
+  {
+   "inicio": 16.2,
+   "texto": "La cinética es tu velocímetro: ves si acelera o frena ahora, no después."
+  },
+  {
+   "inicio": 24.2,
+   "texto": "Mira el velocímetro, no solo el retrovisor. Sígueme."
+  }
+ ],
+ "05_11-11_Inercia.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿Vendiste porque ya subió mucho?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "Un cuerpo en movimiento sigue en movimiento, hasta que una fuerza lo frena."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "En bolsa, que ya subió mucho no es una razón para girar."
+  },
+  {
+   "inicio": 14.2,
+   "texto": "Espera a que pierda energía."
+  },
+  {
+   "inicio": 17.2,
+   "texto": "El movimiento sigue hasta que se frena. Sígueme."
+  }
+ ],
+ "06_12-11_Friccion.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿Sigue subiendo, o ya se cansó?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "La fricción le roba energía poco a poco."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "En bolsa, mira los impulsos: cada vez más cortos."
+  },
+  {
+   "inicio": 13.8,
+   "texto": "La energía se agota aunque el precio siga arriba."
+  },
+  {
+   "inicio": 17.2,
+   "texto": "Cada impulso cuenta su energía. Sígueme."
+  }
+ ],
+ "07_13-11_Rebote.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿Tu soporte va a aguantar?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "Cada rebote pierde energía y sube menos."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "En bolsa pasa igual: rebotes cada vez más débiles"
+  },
+  {
+   "inicio": 14.0,
+   "texto": "el piso pierde fuerza y puede romperse."
+  },
+  {
+   "inicio": 17.2,
+   "texto": "No cuentes toques: mide cada rebote. Sígueme."
+  }
+ ],
+ "08_14-11_Vectores_1.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿La subida más vertical gana?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "En física, el más inclinado no llega más lejos. 45 grados gana; 30 grados y 60 grados empatan: caminos distintos, mismo destino."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "En bolsa, una subida vertical impresiona, y puede gastarse rápido. Lo tradicional mira cuánto sube; la cinética mira cómo sube."
+  },
+  {
+   "inicio": 16.2,
+   "texto": "No solo cuánto sube: cómo sube. Sígueme para la parte 2."
+  }
+ ],
+ "09_15-11_Vectores_2.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "Mismo precio, ¿misma señal?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "Los dos llegan al mismo punto, pero el de 60 grados sube tres veces más alto y tarda casi el doble."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "En bolsa, dos caminos pueden terminar en el mismo precio. Lo tradicional ve el destino; la cinética ve el esfuerzo."
+  },
+  {
+   "inicio": 16.2,
+   "texto": "El precio final no cuenta toda la historia."
+  }
+ ],
+ "10_16-11_Vectores_3.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "Tanto empuje, y el precio no avanza."
+  },
+  {
+   "inicio": 2.3,
+   "texto": "Con la misma fuerza, si cambia la dirección, cambia el reparto: más avance o más altura."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "Una explosión gasta su fuerza en subir. Un avance sostenido la gasta en recorrer."
+  },
+  {
+   "inicio": 16.2,
+   "texto": "Misma fuerza, distinto resultado."
+  }
+ ],
+ "11_17-11_Vectores_4_Calma.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "La calma antes de la explosión."
+  },
+  {
+   "inicio": 2.3,
+   "texto": "Un resorte comprimido guarda energía: el doble de compresión, cuatro veces más energía. Al soltarlo, sale violento."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "En bolsa, el precio comprimido acumula energía. Cuando explota, sale fuerte, pero violento no es lo mismo que lejos."
+  },
+  {
+   "inicio": 16.2,
+   "texto": "Violento no es lo mismo que lejos."
+  }
+ ],
+ "12_18-11_Vectores_5.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿Un salto gigante, o muchos pasos?"
+  },
+  {
+   "inicio": 2.3,
+   "texto": "Con la misma fuerza de salida, los pasos bajos avanzan casi el doble de rápido hacia adelante."
+  },
+  {
+   "inicio": 8.2,
+   "texto": "Muchas tendencias avanzan a pasos, no a saltos. Lo tradicional espera el salto; la cinética lee los pasos."
+  },
+  {
+   "inicio": 16.2,
+   "texto": "La gravedad cobra cada salto. Sígueme."
+  }
+ ],
+ "13_19-11_Burbuja_7_etapas.mp4": [
+  {
+   "inicio": 0.0,
+   "texto": "¿Cómo nace una burbuja?"
+  },
+  {
+   "inicio": 2.5,
+   "texto": "De la calma a la burbuja, y de vuelta a la calma."
+  },
+  {
+   "inicio": 4.5,
+   "texto": "Primero, calma: rango estrecho, el precio acumula."
+  },
+  {
+   "inicio": 6.9,
+   "texto": "Los bordes se separan, como un embudo."
+  },
+  {
+   "inicio": 9.2,
+   "texto": "Cada impulso y cada retroceso agrandan la burbuja."
+  },
+  {
+   "inicio": 11.6,
+   "texto": "Llega a su tamaño máximo. Ya no crece."
+  },
+  {
+   "inicio": 13.9,
+   "texto": "Los bordes se acercan: la energía se gasta."
+  },
+  {
+   "inicio": 16.3,
+   "texto": "El embudo se cierra y el centro se aplana."
+  },
+  {
+   "inicio": 18.6,
+   "texto": "Nueva calma. El ciclo reinicia."
+  },
+  {
+   "inicio": 21.0,
+   "texto": "Y también pasa al revés."
+  },
+  {
+   "inicio": 29.4,
+   "texto": "Es un ciclo. Ninguna etapa dura para siempre."
+  },
+  {
+   "inicio": 32.6,
+   "texto": "No persigas la burbuja: lee su etapa. Sígueme."
+  }
+ ],
+ "14_20-11_Esquema_Bollinger.mp4": [
+  {
+   "inicio": 0.2,
+   "texto": "¿Sabías que leer el precio es más fácil de lo que imaginas?"
+  },
+  {
+   "inicio": 2.6,
+   "texto": "En Cinética Bursátil lo hacemos sencillo: vemos en qué etapa de Bollinger está el precio."
+  },
+  {
+   "inicio": 6.0,
+   "texto": "Primero, sus tres partes."
+  },
+  {
+   "inicio": 7.6,
+   "texto": "La banda superior: el techo."
+  },
+  {
+   "inicio": 8.9,
+   "texto": "La línea media: el centro."
+  },
+  {
+   "inicio": 10.2,
+   "texto": "La banda inferior: el piso."
+  },
+  {
+   "inicio": 11.5,
+   "texto": "Canal: el precio va de lado y acumula energía."
+  },
+  {
+   "inicio": 15.0,
+   "texto": "Embudo: las bandas se abren y el precio elige dirección."
+  },
+  {
+   "inicio": 18.5,
+   "texto": "Expansión: corre en una dirección y una banda lo acompaña."
+  },
+  {
+   "inicio": 22.0,
+   "texto": "Burbuja: máxima apertura; el impulso empieza a gastarse."
+  },
+  {
+   "inicio": 25.5,
+   "texto": "Las bandas se cierran, y el precio se frena."
+  },
+  {
+   "inicio": 29.0,
+   "texto": "Y vuelve el canal: se prepara el próximo movimiento."
+  },
+  {
+   "inicio": 32.5,
+   "texto": "Seis etapas, un ciclo. Al alza y a la baja."
+  },
+  {
+   "inicio": 35.7,
+   "texto": "¿En qué etapa está tu acción hoy? Te leo en comentarios."
+  }
+ ],
+ "15_CALL_PUT_a_la_vez.mp4": [
+  {
+   "inicio": 0.3,
+   "texto": "Call y put, a la vez."
+  },
+  {
+   "inicio": 3.5,
+   "texto": "En una misma pantalla: el horario extendido y el horario regular."
+  },
+  {
+   "inicio": 12,
+   "texto": "Cuando uno gana energía, el otro la pierde."
+  },
+  {
+   "inicio": 22,
+   "texto": "Dos temporalidades, una sola lectura. Treinta minutos para la dirección; cinco minutos para el momento."
+  },
+  {
+   "inicio": 32,
+   "texto": "Mis códigos, sincronizados en las dos temporalidades."
+  },
+  {
+   "inicio": 39,
+   "texto": "El horario extendido prepara. El horario regular decide."
+  },
+  {
+   "inicio": 45,
+   "texto": "Acción. Contrato. Plan."
+  },
+  {
+   "inicio": 46.5,
+   "texto": "Algo extraordinario está en camino. Sígueme."
+  }
+ ]
+}
