@@ -1,0 +1,24 @@
+name: Muestras de voz con musica
+on:
+  workflow_dispatch:
+    inputs:
+      reel: {description: "Prefijo del reel", default: "03"}
+      musica: {description: "Volumen musica fondo", default: "0.18"}
+permissions: {contents: write}
+jobs:
+  muestras:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg && pip install edge-tts
+      - run: |
+          cd final
+          for V in es-MX-JorgeNeural es-ES-AlvaroNeural es-US-AlonsoNeural es-AR-TomasNeural; do
+            python -u ../narrar_reels.py --voz $V --solo "${{ inputs.reel }}" --musica "${{ inputs.musica }}" --salida "../muestras/$V"
+          done
+      - run: |
+          git config user.name "cinetica-bot"; git config user.email "bot@users.noreply.github.com"
+          git pull -q; git add muestras && git commit -m "Muestras de voz" && git push || echo "sin cambios"

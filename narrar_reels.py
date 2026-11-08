@@ -24,8 +24,8 @@ VOCES = {  # voces masculinas en español; ninguna permite elegir "50 años", se
     "es-CO-GonzaloNeural": "Colombia, neutra",
     "es-US-AlonsoNeural":  "EE. UU. hispano, neutra",
 }
-PITCH = "-8Hz"     # más grave = suena mayor. Prueba -4Hz a -12Hz
-RATE  = "-4%"      # algo más pausado
+PITCH = "+0Hz"     # más grave = suena mayor. Prueba -4Hz a -12Hz
+RATE  = "+0%"      # algo más pausado
 GAP   = 0.15       # segundos mínimos entre frases
 MAX_ACEL = 1.22    # si una frase no cabe en su escena, se acelera hasta 18 %; si aún no cabe, empuja la siguiente
 
@@ -53,6 +53,8 @@ def buscar(nombre):
         if os.path.exists(p): return p
     return None
 
+MUSICA = 0.0   # 0 = sin música; 0.12-0.25 = música de fondo tenue (se baja sola cuando habla la voz)
+
 def narrar(nombre, segs, voz, outdir, tmp):
     src = buscar(nombre)
     if not src: print("  [FALTA]", nombre); return
@@ -74,8 +76,14 @@ def narrar(nombre, segs, voz, outdir, tmp):
     for j,(w,ini) in enumerate(partes):
         ins += ["-i", w]; ms = int(ini*1000)
         filt.append(f"[{j+1}:a]adelay={ms}|{ms}[a{j}]")
-    filt.append("".join(f"[a{j}]" for j in range(len(partes))) + f"amix=inputs={len(partes)}:normalize=0,"
-                f"apad,atrim=0:{vdur:.2f},highpass=f=70,acompressor=threshold=-20dB:ratio=3,loudnorm=I=-14:TP=-1.5[v]")
+    voz_chain = "".join(f"[a{j}]" for j in range(len(partes))) + f"amix=inputs={len(partes)}:normalize=0,apad,atrim=0:{vdur:.2f},highpass=f=70,acompressor=threshold=-20dB:ratio=3"
+    if MUSICA > 0:
+        filt.append(voz_chain + ",asplit=2[vz][sc]")
+        filt.append(f"[0:a]aformat=sample_rates=48000:channel_layouts=stereo,volume={MUSICA}[mu]")
+        filt.append("[mu][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[mud]")
+        filt.append("[vz][mud]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5[v]")
+    else:
+        filt.append(voz_chain + ",loudnorm=I=-14:TP=-1.5[v]")
     out = os.path.join(outdir, nombre)
     subprocess.run(["ffmpeg","-y","-v","error",*ins,"-filter_complex",";".join(filt),
                     "-map","0:v","-map","[v]","-c:v","copy","-c:a","aac","-b:a","192k","-shortest",out], check=True)
@@ -86,7 +94,14 @@ def main():
     ap.add_argument("--voz", default="es-MX-JorgeNeural")
     ap.add_argument("--muestras", action="store_true")
     ap.add_argument("--solo", default="")
+    ap.add_argument("--musica", type=float, default=0.0, help="volumen de la música de fondo (ej. 0.18)")
+    ap.add_argument("--pitch", default=None); ap.add_argument("--rate", default=None)
+    ap.add_argument("--salida", default="final_voz")
     a = ap.parse_args()
+    global MUSICA, PITCH, RATE
+    MUSICA = a.musica
+    if a.pitch: PITCH = a.pitch
+    if a.rate: RATE = a.rate
     for exe in ("ffmpeg","ffprobe"):
         if not shutil.which(exe): sys.exit(f"Falta {exe}. Instálalo: winget install Gyan.FFmpeg  (y cierra/abre la ventana)")
     try: import edge_tts  # noqa
@@ -98,12 +113,12 @@ def main():
             asyncio.run(tts(t, v, os.path.join("muestras_voz", v+".mp3"))); print("  muestra:", v, "-", desc)
         print("Escucha la carpeta muestras_voz y luego ejecuta:  python narrar_reels.py --voz NOMBRE"); return
     data = json.load(open(os.path.join(AQUI,"narraciones.json"), encoding="utf-8"))
-    os.makedirs("final_voz", exist_ok=True)
+    os.makedirs(a.salida, exist_ok=True)
     print("Voz:", a.voz)
     for nombre, segs in data.items():
         if a.solo and not nombre.startswith(a.solo): continue
         with tempfile.TemporaryDirectory() as tmp:
-            try: narrar(nombre, segs, a.voz, "final_voz", tmp)
+            try: narrar(nombre, segs, a.voz, a.salida, tmp)
             except Exception as e: print("  [ERROR]", nombre, e)
     print("\nListo. Revisa la carpeta final_voz y súbela a Drive.")
 
