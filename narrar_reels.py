@@ -36,8 +36,12 @@ def dur(path):
                          capture_output=True, text=True).stdout.strip()
     return float(out)
 
+# Pronunciación: términos en inglés escritos como suenan para la voz en español
+PRONUNCIA = [("Call", "Col"), ("call", "col"), ("CALL", "Col")]
+
 async def tts(texto, voz, salida):
     import edge_tts
+    for a, b in PRONUNCIA: texto = texto.replace(a, b)
     for intento in range(4):  # reintenta si el servicio de voz tarda o corta
         try:
             await asyncio.wait_for(edge_tts.Communicate(texto, voz, rate=RATE, pitch=PITCH).save(salida), 40)
