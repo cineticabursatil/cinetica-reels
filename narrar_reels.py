@@ -38,7 +38,14 @@ def dur(path):
 
 async def tts(texto, voz, salida):
     import edge_tts
-    await edge_tts.Communicate(texto, voz, rate=RATE, pitch=PITCH).save(salida)
+    for intento in range(4):  # reintenta si el servicio de voz tarda o corta
+        try:
+            await asyncio.wait_for(edge_tts.Communicate(texto, voz, rate=RATE, pitch=PITCH).save(salida), 40)
+            return
+        except Exception as e:
+            print(f"    reintento {intento+1} ({type(e).__name__})", flush=True)
+            await asyncio.sleep(3 * (intento + 1))
+    raise RuntimeError("el servicio de voz no respondió")
 
 def buscar(nombre):
     for c in [os.getcwd(), os.path.join(os.getcwd(),"final"), AQUI, os.path.join(AQUI,"final")]:
@@ -72,7 +79,7 @@ def narrar(nombre, segs, voz, outdir, tmp):
     out = os.path.join(outdir, nombre)
     subprocess.run(["ffmpeg","-y","-v","error",*ins,"-filter_complex",";".join(filt),
                     "-map","0:v","-map","[v]","-c:v","copy","-c:a","aac","-b:a","192k","-shortest",out], check=True)
-    print(f"  OK  {nombre}  ({cursor:.1f}s de voz / {vdur:.1f}s)")
+    print(f"  OK  {nombre}  ({cursor:.1f}s de voz / {vdur:.1f}s)", flush=True)
 
 def main():
     ap = argparse.ArgumentParser()
