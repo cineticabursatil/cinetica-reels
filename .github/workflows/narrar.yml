@@ -4,6 +4,7 @@ on:
     inputs:
       voz: {description: "Voz edge-tts", default: "es-MX-JorgeNeural"}
       solo: {description: "Prefijo de reel (vacío = todos)", default: ""}
+      musica: {description: "Volumen musica de fondo (0 = sin musica)", default: "0.18"}
   push:
     paths: ["narraciones.json"]
 permissions: {contents: write}
@@ -18,7 +19,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg && pip install edge-tts
       - run: |
           cd final
-          python -u ../narrar_reels.py --voz "${{ inputs.voz || 'es-MX-JorgeNeural' }}" ${{ inputs.solo && format('--solo {0}', inputs.solo) || '' }}
+          python -u ../narrar_reels.py --voz "${{ inputs.voz || 'es-MX-JorgeNeural' }}" ${{ inputs.solo && format('--solo {0}', inputs.solo) || '' }} --musica "${{ inputs.musica || '0.18' }}"
           rm -rf ../final_voz && mv final_voz ../final_voz
       - run: |
           git config user.name "cinetica-bot"; git config user.email "bot@users.noreply.github.com"
