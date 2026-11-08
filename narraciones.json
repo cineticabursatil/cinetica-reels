@@ -169,20 +169,20 @@
  ],
  "08_14-11_Vectores_1.mp4": [
   {
-   "inicio": 0.0,
+   "inicio": 0,
    "texto": "¿La subida más vertical gana?"
   },
   {
    "inicio": 2.3,
-   "texto": "En física, el más inclinado no llega más lejos. 45 grados gana; 30 grados y 60 grados empatan: caminos distintos, mismo destino."
+   "texto": "En física, el más inclinado no llega más lejos: cuarenta y cinco grados gana."
   },
   {
    "inicio": 8.2,
-   "texto": "En bolsa, una subida vertical impresiona, y puede gastarse rápido. Lo tradicional mira cuánto sube; la cinética mira cómo sube."
+   "texto": "En bolsa, una subida vertical impresiona, pero se gasta rápido. Lo tradicional mira cuánto sube; la cinética, cómo sube."
   },
   {
    "inicio": 16.2,
-   "texto": "No solo cuánto sube: cómo sube. Sígueme para la parte 2."
+   "texto": "Cómo sube importa. Sígueme para la parte 2."
   }
  ],
  "09_15-11_Vectores_2.mp4": [
@@ -259,36 +259,36 @@
  ],
  "13_19-11_Burbuja_7_etapas.mp4": [
   {
-   "inicio": 0.0,
+   "inicio": 0,
    "texto": "¿Cómo nace una burbuja?"
   },
   {
    "inicio": 2.5,
-   "texto": "De la calma a la burbuja, y de vuelta a la calma."
+   "texto": "De la calma a la burbuja, y de vuelta."
   },
   {
    "inicio": 4.5,
-   "texto": "Primero, calma: rango estrecho, el precio acumula."
+   "texto": "Calma: el precio acumula."
   },
   {
    "inicio": 6.9,
-   "texto": "Los bordes se separan, como un embudo."
+   "texto": "Los bordes se abren, como un embudo."
   },
   {
    "inicio": 9.2,
-   "texto": "Cada impulso y cada retroceso agrandan la burbuja."
+   "texto": "Cada impulso agranda la burbuja."
   },
   {
    "inicio": 11.6,
-   "texto": "Llega a su tamaño máximo. Ya no crece."
+   "texto": "Llega a su máximo."
   },
   {
    "inicio": 13.9,
-   "texto": "Los bordes se acercan: la energía se gasta."
+   "texto": "Los bordes se acercan."
   },
   {
    "inicio": 16.3,
-   "texto": "El embudo se cierra y el centro se aplana."
+   "texto": "El embudo se cierra."
   },
   {
    "inicio": 18.6,
@@ -300,7 +300,7 @@
   },
   {
    "inicio": 29.4,
-   "texto": "Es un ciclo. Ninguna etapa dura para siempre."
+   "texto": "Es un ciclo: ninguna etapa dura para siempre."
   },
   {
    "inicio": 32.6,
@@ -310,59 +310,59 @@
  "14_20-11_Esquema_Bollinger.mp4": [
   {
    "inicio": 0.2,
-   "texto": "¿Sabías que leer el precio es más fácil de lo que imaginas?"
+   "texto": "¿Sabías que leer el precio es más fácil de lo que crees?"
   },
   {
    "inicio": 2.6,
-   "texto": "En Cinética Bursátil lo hacemos sencillo: vemos en qué etapa de Bollinger está el precio."
+   "texto": "Vemos en qué etapa de Bollinger está."
   },
   {
    "inicio": 6.0,
-   "texto": "Primero, sus tres partes."
+   "texto": "Tres partes:"
   },
   {
    "inicio": 7.6,
-   "texto": "La banda superior: el techo."
+   "texto": "techo,"
   },
   {
    "inicio": 8.9,
-   "texto": "La línea media: el centro."
+   "texto": "centro,"
   },
   {
    "inicio": 10.2,
-   "texto": "La banda inferior: el piso."
+   "texto": "y piso."
   },
   {
    "inicio": 11.5,
-   "texto": "Canal: el precio va de lado y acumula energía."
+   "texto": "Canal: el precio va de lado y acumula."
   },
   {
    "inicio": 15.0,
-   "texto": "Embudo: las bandas se abren y el precio elige dirección."
+   "texto": "Embudo: las bandas se abren."
   },
   {
    "inicio": 18.5,
-   "texto": "Expansión: corre en una dirección y una banda lo acompaña."
+   "texto": "Expansión: el precio corre."
   },
   {
    "inicio": 22.0,
-   "texto": "Burbuja: máxima apertura; el impulso empieza a gastarse."
+   "texto": "Burbuja: máxima apertura."
   },
   {
    "inicio": 25.5,
-   "texto": "Las bandas se cierran, y el precio se frena."
+   "texto": "Contracción: el precio se frena."
   },
   {
    "inicio": 29.0,
-   "texto": "Y vuelve el canal: se prepara el próximo movimiento."
+   "texto": "Y vuelve el canal."
   },
   {
    "inicio": 32.5,
-   "texto": "Seis etapas, un ciclo. Al alza y a la baja."
+   "texto": "Seis etapas, un ciclo."
   },
   {
    "inicio": 35.7,
-   "texto": "¿En qué etapa está tu acción hoy? Te leo en comentarios."
+   "texto": "¿En qué etapa está tu acción? Comenta."
   }
  ],
  "15_CALL_PUT_a_la_vez.mp4": [
@@ -380,7 +380,7 @@
   },
   {
    "inicio": 22,
-   "texto": "Dos temporalidades, una sola lectura. Treinta minutos para la dirección; cinco minutos para el momento."
+   "texto": "Dos temporalidades, una lectura: treinta minutos para la dirección; cinco para el momento."
   },
   {
    "inicio": 32,
@@ -396,7 +396,7 @@
   },
   {
    "inicio": 46.5,
-   "texto": "Algo extraordinario está en camino. Sígueme."
+   "texto": "Algo grande viene. Sígueme."
   }
  ]
 }

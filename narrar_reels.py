@@ -27,7 +27,7 @@ VOCES = {  # voces masculinas en español; ninguna permite elegir "50 años", se
 PITCH = "-8Hz"     # más grave = suena mayor. Prueba -4Hz a -12Hz
 RATE  = "-4%"      # algo más pausado
 GAP   = 0.15       # segundos mínimos entre frases
-MAX_ACEL = 1.18    # si una frase no cabe en su escena, se acelera hasta 18 %; si aún no cabe, empuja la siguiente
+MAX_ACEL = 1.22    # si una frase no cabe en su escena, se acelera hasta 18 %; si aún no cabe, empuja la siguiente
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 
